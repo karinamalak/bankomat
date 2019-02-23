@@ -27,7 +27,7 @@ public class Bankomat {
                     break;
                 }
             }
-            if (!confirm) System.out.println("NIE ZGADZA SIE PIN"); //tutaj jescze raz czeka na wisanie jak??????????/
+            if (!confirm) System.out.println("NIE ZGADZA SIE  PIN"); //tutaj jescze raz czeka na wisanie jak??????????/
         }
     }
 
