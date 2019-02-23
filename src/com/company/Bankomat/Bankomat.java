@@ -1,6 +1,6 @@
 package com.company.Bankomat;
 
-
+///////////////////
 public class Bankomat {
 
     public static boolean confirm = false;
