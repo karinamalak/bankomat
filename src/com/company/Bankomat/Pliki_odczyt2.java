@@ -8,8 +8,9 @@ public class Pliki_odczyt2 {
 
     //   public static void main(String[] args) {
     public static FileReader fr = null;
-    public static String PATH = "C:\\Users\\Karina\\IdeaProjects\\Bankomat\\src\\com\\company\\Bankomat\\plik.txt";
+    public static String PATH = "C:\\Users\\Karina\\IdeaProjects\\bankomat22\\src\\com\\company\\Bankomat\\plik.txt";
     public static String linia = "";
+    public static String linia2 = "";
     public static ArrayList<String> lista = new ArrayList<>();
     public static String[][] daneOdczytane;
     public static FileWriter fileWriter = null;
@@ -19,14 +20,11 @@ public class Pliki_odczyt2 {
         //		OTWIERANIE PLIKU:
         try {
             fr = new FileReader(PATH);
-            fileWriter = new FileWriter(PATH);
-            bufferedWriter = new BufferedWriter(fileWriter);
+
 
         } catch (FileNotFoundException e) {
             System.out.println("BŁĄD PRZY OTWIERANIU PLIKU!");
             System.exit(1);
-        } catch (IOException e) {
-            e.printStackTrace();
         }
         BufferedReader bfr = new BufferedReader(fr); //tablica dwoymiar o wymiarze 2 na nic
 
@@ -76,20 +74,21 @@ public class Pliki_odczyt2 {
     }
 
     public static void zapis() throws IOException {
+        fileWriter = new FileWriter(PATH);
+        bufferedWriter = new BufferedWriter(fileWriter);
         for (int i = 0; i < daneOdczytane.length; i++) {
             for (int j = 0; j < daneOdczytane[i].length; j++) {
-                linia += daneOdczytane[i][j] + ";";
+                linia2 += daneOdczytane[i][j] + ";";
             }
             try {
-                bufferedWriter.write(linia);
+                bufferedWriter.write(linia2);
                 bufferedWriter.newLine();
             } catch (IOException e) {
                 e.printStackTrace();
-            } finally {
-                bufferedWriter.close();
             }
-
+            linia2="";
         }
+        bufferedWriter.close();
 
 
     }

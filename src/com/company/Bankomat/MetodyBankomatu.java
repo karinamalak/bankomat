@@ -1,6 +1,6 @@
 package com.company.Bankomat;
 
-import org.jsoup.Jsoup;
+//import org.jsoup.Jsoup;
 
 import javax.swing.*;
 import java.awt.*;
@@ -34,7 +34,7 @@ public abstract class MetodyBankomatu {
         ramka.pack();
         ramka.setVisible(true);
 
-        while (Bankomat.confirm == false) {
+
             przyciskZaloguj.addActionListener(new ActionListener() { //event do buttona
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -42,7 +42,6 @@ public abstract class MetodyBankomatu {
                     Bankomat.zweryfikujKlienta(pin); //wywoluje metode, ktora weryfikuje klienta
                 }
             });
-        }
     }
 
 

@@ -14,7 +14,7 @@ public class Bankomat {
     }
 
     public static void zweryfikujKlienta(Integer pin) {
-        while (confirm = false) {
+        while (confirm == false) {
             for (int i = 0; i < Pliki_odczyt2.daneOdczytane.length; i++) {
                 //   if(String.valueOf(pin).equals(Integer.parseInt(Pliki_odczyt2.daneOdczytane[i][2]))) {
                 if (String.valueOf(pin).equals(Pliki_odczyt2.daneOdczytane[i][2])) {
