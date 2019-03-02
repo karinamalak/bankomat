@@ -1,14 +1,17 @@
 package com.company.Bankomat;
 
 
+import java.io.IOException;
+
 public class Bankomat {
 
     public static boolean confirm = false;
     public static Double staraKwota; //kwota wyjsciowa danego klienta
     public static int ityKlient;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
+        HTMLparse.getElelemntById();
         Pliki_odczyt2.odczyt();
         MetodyBankomatu.pokazWidok();
     }
