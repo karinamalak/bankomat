@@ -12,7 +12,7 @@ public class HTMLparse {
 
 
     public  static void getElelemntById() throws IOException {
-//
+//k
         Document doc = Jsoup.connect("https://www.bankier.pl/").get();
        // Document doc1 = Jsoup.parse(doc);
       //  Element code = doc.getElementById("");
