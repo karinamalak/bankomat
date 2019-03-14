@@ -6,4 +6,3 @@ Funkcjonalności:
 - logowanie, stan konta, 
 - wpłata/wypłata w walutach: PLN, USD, EUR
 - pobieranie aktualnego kursu walut ze strony internetowej (parsowanie źródła)
-- 
