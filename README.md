@@ -1,4 +1,4 @@
-# bankomat
+# bankomat v. 1.5
 
 Funkcjonalności:
 - odczyt i zapis danych klientów z pliku txt
